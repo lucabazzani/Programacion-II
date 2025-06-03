@@ -31,7 +31,7 @@ public class Persona {
             // Si el argumento es inválido, lanzamos una excepción para detener la ejecución
             throw new IllegalArgumentException("El nombre no puede ser nulo ni vacío.");
         }
-        this.nombre = nombre.trim();
+        this.nombre = nombre;
     }
 
     // c) Getter para apellido
@@ -44,7 +44,7 @@ public class Persona {
         if (apellido == null || apellido.trim().isEmpty()) {
             throw new IllegalArgumentException("El apellido no puede ser nulo ni vacío.");
         }
-        this.apellido = apellido.trim();
+        this.apellido = apellido;
     }
 
     // e) Getter para número de identificación
@@ -57,7 +57,7 @@ public class Persona {
         if (numeroIdentificacion == null || numeroIdentificacion.trim().isEmpty()) {
             throw new IllegalArgumentException("El número de identificación no puede ser nulo ni vacío.");
         }
-        this.numeroIdentificacion = numeroIdentificacion.trim();
+        this.numeroIdentificacion = numeroIdentificacion;
     }
 
     // g) Getter para edad
@@ -83,8 +83,7 @@ public class Persona {
         if (direccion == null) {
             throw new IllegalArgumentException("La dirección no puede ser nula.");
         }
-        // Podríamos permitir dirección vacía si el usuario no la tiene, por eso no validamos isEmpty()
-        this.direccion = direccion.trim();
+        this.direccion = direccion;
     }
 
     // k) Getter para teléfono
@@ -97,7 +96,7 @@ public class Persona {
         if (telefono == null) {
             throw new IllegalArgumentException("El teléfono no puede ser nulo.");
         }
-        this.telefono = telefono.trim();
+        this.telefono = telefono;
     }
 
     // 4. Método mostrar Información. Imprime en consola todos los datos de la persona en un formato legible
@@ -112,7 +111,7 @@ public class Persona {
         System.out.println("Teléfono: " + this.telefono);
     }
 
-    // 5. Método saludar. Imprime un saludo genérico usando el nombre y apellido de la persona.
+    // 5. Método para saludar. Imprime un saludo genérico usando el nombre y apellido de la persona.
     public void saludar() {
         System.out.println("Hola, mi nombre es " + this.nombre + " " + this.apellido + ".");
     }

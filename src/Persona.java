@@ -99,7 +99,7 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    // 4. Método mostrar Información. Imprime en consola todos los datos de la persona en un formato legible
+    // 4. Metodo mostrar Información. Imprime en consola todos los datos de la persona en un formato legible
     public void mostrarInformacion() {
         // Para cada campo, imprimimos su etiqueta y su valor
         System.out.println("| Datos de la Persona |");
@@ -111,7 +111,7 @@ public class Persona {
         System.out.println("Teléfono: " + this.telefono);
     }
 
-    // 5. Método para saludar. Imprime un saludo genérico usando el nombre y apellido de la persona.
+    // 5. Metodo para saludar. Imprime un saludo genérico usando el nombre y apellido de la persona.
     public void saludar() {
         System.out.println("Hola, mi nombre es " + this.nombre + " " + this.apellido + ".");
     }

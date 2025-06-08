@@ -54,7 +54,7 @@ public class Profesor extends Persona{
 
     // Métodos adicionales: enseñar y @Override mostrarInformacion
     public void ensenar() {
-        System.out.println("El profesor " + getNombre() + " " + getApellido() + "está enseñando en el departamento de " + getDepartamento());
+        System.out.println("La profesora " + getNombre() + " " + getApellido() + " está enseñando en\nel departamento de " + getDepartamento());
     }
 
     @Override
@@ -62,8 +62,8 @@ public class Profesor extends Persona{
         super.mostrarInformacion();
 
         System.out.println("Departamento: " + this.departamento);
-        System.out.println("Salario: " + this.salario);
+        System.out.println("Salario: $" + this.salario);
         System.out.println("Años de experiencia: " + this.anosExperiencia);
-        System.out.println("------------------------------");
+        System.out.println("===============================================");
     }
 }

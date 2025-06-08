@@ -55,7 +55,7 @@ public class Estudiante extends Persona {
 
     // Metodos adicionales: Estudiar y @Override para mostrarInformación
     public void estudiar() {
-        System.out.println("El estudiante " + getNombre() + " " + getApellido() + "está estudiando " + getCarrera() + ".");
+        System.out.println("El estudiante " + getNombre() + " " + getApellido() + " está estudiando\n" + getCarrera() + ".");
     }
 
     @Override
@@ -65,6 +65,6 @@ public class Estudiante extends Persona {
         System.out.println("Matrícula: " + this.matricula);
         System.out.println("Carrera: " + this.carrera);
         System.out.println("Promedio: " + this.promedio);
-        System.out.println("------------------------------");
+        System.out.println("===============================================");
     }
 }

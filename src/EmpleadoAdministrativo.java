@@ -53,7 +53,7 @@ public class EmpleadoAdministrativo extends Persona{
 
     // Métodos adicionales: Administrar y @Override mostrarInformación
     public void administrar() {
-        System.out.println("El empleado " + getNombre() + " " + getApellido() + "está realizando tareas administrativas.");
+        System.out.println("El empleado " + getNombre() + " " + getApellido() + " está realizando\ntareas administrativas.");
     }
 
     @Override
@@ -62,7 +62,7 @@ public class EmpleadoAdministrativo extends Persona{
 
         System.out.println("Cargo: " + this.cargo);
         System.out.println("Horario de trabajo: " + this.horarioTrabajo);
-        System.out.println("Salario: " + this.salario);
-        System.out.println("------------------------------");
+        System.out.println("Salario: $" + this.salario);
+        System.out.println("===============================================");
     }
 }

@@ -102,13 +102,14 @@ public class Persona {
     // 4. Metodo mostrar Información. Imprime en consola todos los datos de la persona en un formato legible
     public void mostrarInformacion() {
         // Para cada campo, imprimimos su etiqueta y su valor
-        System.out.println("| Datos de la Persona |");
+        System.out.println("============= Datos de la Persona =============");
         System.out.println("Nombre: " + this.nombre);
         System.out.println("Apellido: " + this.apellido);
         System.out.println("Número de Identificación: " + this.numeroIdentificacion);
         System.out.println("Edad: " + this.edad);
         System.out.println("Dirección: " + this.direccion);
         System.out.println("Teléfono: " + this.telefono);
+        System.out.println("===============================================");
     }
 
     // 5. Metodo para saludar. Imprime un saludo genérico usando el nombre y apellido de la persona.

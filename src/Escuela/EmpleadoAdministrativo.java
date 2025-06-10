@@ -1,3 +1,5 @@
+package Escuela;
+
 public class EmpleadoAdministrativo extends Persona{
 
     private String cargo;

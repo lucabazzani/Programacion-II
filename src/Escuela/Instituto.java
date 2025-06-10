@@ -3,14 +3,14 @@ package Escuela;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainApp {
+public class Instituto {
     public static void main(String[] args) {
         Persona persona1 = new Persona(
                 "Luca",
                 "Bazzani",
                 "44607411",
                 22,
-                "Los Cóndores",
+                "La Antártida",
                 "3541-575723");
 
         Estudiante estudiante1 = new Estudiante(

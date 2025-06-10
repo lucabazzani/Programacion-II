@@ -1,4 +1,6 @@
-public class Profesor extends Persona{
+package Escuela;
+
+public class Profesor extends Persona {
 
     private String departamento;
     private double salario;
@@ -54,7 +56,7 @@ public class Profesor extends Persona{
 
     // Métodos adicionales: enseñar y @Override mostrarInformacion
     public void ensenar() {
-        System.out.println("La profesora " + getNombre() + " " + getApellido() + " está enseñando en\nel departamento de " + getDepartamento());
+        System.out.println("El profesor " + getNombre() + " " + getApellido() + " está enseñando en\nel departamento de " + getDepartamento());
     }
 
     @Override
